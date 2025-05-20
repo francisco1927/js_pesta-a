@@ -1,13 +1,13 @@
-const target=document.querySelectorAll('[data-target]')
-const content=document.querySelectorAll('[data-contet]')
+const targets=document.querySelectorAll('[data-target]');
+const content=document.querySelectorAll('[data-content]');
 
-target.forEach(target=>{
+targets.forEach(target=>{
 target.addEventListener('click',()=>{
     content.forEach(c=>{
         c.classList.remove('active')
 
     })
-        contentt=document.querySelector(target.dataset.target)
+        const t=document.querySelector(target.dataset.target)
         t.classList.add('active')
 
 })
